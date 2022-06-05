@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import OptionsBar from "./components/OptionsBar/OptionsBar";
 import List from "./components/List/List";
 import Card from "./components/Card/Card";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
         <List>
           <Card />
         </List>
+        <Footer />
       </Container>
     </>
   );
