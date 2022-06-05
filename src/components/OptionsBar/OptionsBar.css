@@ -1,0 +1,60 @@
+.optionsBar {
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.optionsBar .filterOptions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.optionsBar .filterOptions * {
+  color: #fff;
+}
+
+.optionsBar .filterOptions li {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 0.5rem 0.25rem;
+}
+
+.optionsBar .filterOptions .latest {
+  position: relative;
+}
+
+.optionsBar .filterOptions .latest::before {
+  content: "";
+  position: absolute;
+  right: -2px;
+  top: 6px;
+  height: 6px;
+  width: 6px;
+  background-color: #fa4f02;
+  border-radius: 50%;
+}
+
+.optionsBar .filterOptions .divisor {
+  opacity: 0.8;
+}
+
+.optionsBar .filterOptions .premium,
+.optionsBar .filterOptions .free {
+  font-size: 0.85rem;
+}
+
+.optionsBar .filterOptions .premium {
+  color: #a74212;
+}
+
+.optionsBar .filterOptions .free {
+  color: #3969ab;
+}
+
+.optionsBar .settings svg {
+  cursor: pointer;
+  fill: #828485;
+  margin: 0 0.75rem;
+}

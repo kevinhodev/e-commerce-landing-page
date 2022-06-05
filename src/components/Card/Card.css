@@ -1,0 +1,81 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1e2021;
+  height: 350px;
+  width: 280px;
+  border-radius: 6%;
+  box-shadow: -10px 10px 10px 5px rgba(0, 0, 0, 0.25);
+}
+
+.card .vectorImage {
+  background-color: #333438;
+  width: 90%;
+  height: 60%;
+  border-radius: 6%;
+  margin-top: 1.1rem;
+}
+
+.card .vectorImage .type {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.3rem;
+  padding: 0.5rem;
+  margin: 0 0.75rem;
+}
+
+.card .vectorImage .type .icon {
+  fill: #a45b64;
+  height: 18px;
+  height: 18px;
+}
+
+.card .vectorImage .type span {
+  color: #909195;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.card .vectorImage .imageContainer .image {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+
+.card .title {
+  color: #e3e3e3;
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.card .title .highlight {
+  color: #b1575e;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.card .download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.card .download button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  text-decoration: underline;
+  color: #7d7f81;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.card .download .icon {
+  fill: #2d63a5;
+  cursor: pointer;
+}
