@@ -9,6 +9,8 @@
 
 @media (max-width: 1024px) {
   .footer {
+    flex-direction: column;
+    gap: 1rem;
     padding: 0;
   }
 }
@@ -94,6 +96,12 @@
   padding: 1.5rem 2rem;
   height: 40px;
   border-radius: 5px;
+}
+
+@media (max-width: 696px) {
+  .footer button {
+    margin-top: 2rem;
+  }
 }
 
 .footer button .icon {

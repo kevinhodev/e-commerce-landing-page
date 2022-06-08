@@ -178,6 +178,12 @@
   border-radius: 10px;
 }
 
+@media (max-width: 696px) {
+  .header .bottom .searchBar {
+    width: 325px;
+  }
+}
+
 .header .bottom .searchBar .filter {
   color: #fff;
   background-color: #fe638d;
