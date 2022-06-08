@@ -3,6 +3,14 @@
   flex-direction: column;
   width: 100%;
   margin-top: 0.8rem;
+  padding: 0.5rem 2rem 0 4rem;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 0.5rem 0;
+    padding-bottom: 0;
+  }
 }
 
 .header .top {
@@ -24,6 +32,7 @@
   height: 45px;
   border-radius: 8px;
   padding-right: 4px;
+  cursor: pointer;
 }
 
 .header .top .left .logo span {
@@ -37,14 +46,26 @@
   margin-left: 1.5rem;
 }
 
+@media (max-width: 696px) {
+  .header .top .left .navigation {
+    display: none;
+  }
+}
+
 .header .top .left .navigation .menu {
   display: flex;
   gap: 1rem;
 }
 
+@media (max-width: 1024px) {
+  .header .top .left .navigation .menu {
+    gap: 0.2rem;
+  }
+}
+
 .header .top .left .navigation .menu li {
   cursor: pointer;
-  padding: 0.2rem 0.4rem;
+  padding: 0.5rem 0.75rem;
 }
 
 .header .top .left .navigation .menu li:hover {
@@ -75,25 +96,33 @@
 .header .top .right button {
   font-family: inherit;
   font-weight: bold;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   background-color: transparent;
   color: #fff;
   outline: none;
   border: 1px solid #ffffff2c;
   border-radius: 8px;
   padding: 0.75rem 1.1rem;
-  margin-right: 1.2rem;
+  margin-right: 1rem;
   cursor: pointer;
+}
+
+.header .top .right button:hover {
+  background-color: #ffffff2c;
 }
 
 .header .top .right .icon {
   cursor: pointer;
   border-radius: 50%;
-  height: 30px;
-  width: 30px;
-  padding: 0.25rem;
+  height: 40px;
+  width: 40px;
+  padding: 0.4rem;
   margin-left: 0.5rem;
   background-color: #323435;
+}
+
+.header .top .right .icon:hover {
+  background-color: transparent;
 }
 
 .header .top .right .icon.facebook {

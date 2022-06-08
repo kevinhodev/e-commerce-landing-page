@@ -3,11 +3,8 @@
   flex-direction: column;
   align-items: center;
   background-color: #1e2021;
-  height: 450px;
-  width: 280px;
-  max-width: 400px;
-  flex-grow: 1;
-  flex-shrink: 1;
+  height: 400px;
+  width: 350px;
   border-radius: 6%;
   box-shadow: -10px 10px 10px 5px rgba(0, 0, 0, 0.25);
 }
@@ -54,15 +51,19 @@
 .card .title {
   color: #e3e3e3;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 0.65rem;
   font-size: 0.9rem;
   font-weight: 300;
 }
 
+.card .title h2 {
+  margin-top: 0;
+}
+
 .card .title .highlight {
   color: #b1575e;
-  font-size: 2.5rem;
-  font-weight: 300;
+  font-size: 2.75rem;
+  font-weight: bold;
 }
 
 .card .download {
@@ -78,10 +79,11 @@
   border: none;
   text-decoration: underline;
   color: #7d7f81;
-  font-size: 1.4rem;
+  font-size: 1.75rem;
   font-weight: bold;
   cursor: pointer;
 }
+
 .card .download .icon {
   fill: #2d63a5;
   cursor: pointer;
