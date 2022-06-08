@@ -107,6 +107,12 @@
   cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+  .header .top .right button {
+    font-size: 0.8rem;
+  }
+}
+
 .header .top .right button:hover {
   background-color: #ffffff2c;
 }
@@ -119,6 +125,13 @@
   padding: 0.4rem;
   margin-left: 0.5rem;
   background-color: #323435;
+}
+
+@media (max-width: 1024px) {
+  .header .top .right .icon {
+    height: 35px;
+    width: 35px;
+  }
 }
 
 .header .top .right .icon:hover {
