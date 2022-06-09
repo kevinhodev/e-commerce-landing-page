@@ -1,17 +1,25 @@
 .footer {
+  position: relative;
+  left: -2.5%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   margin-top: auto;
   margin-bottom: 2rem;
-  padding: 0.5rem 2rem 0 4rem;
 }
 
 @media (max-width: 1024px) {
   .footer {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 0;
+    left: 0;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 696px) {
+  .footer {
+    justify-content: initial;
+    flex-direction: column-reverse;
+    gap: 2rem;
   }
 }
 
@@ -81,7 +89,15 @@
   object-fit: cover;
 }
 
+@media (max-width: 1024px) {
+  .footer .discover .collections .collection img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
 .footer button {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -100,7 +116,7 @@
 
 @media (max-width: 696px) {
   .footer button {
-    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 

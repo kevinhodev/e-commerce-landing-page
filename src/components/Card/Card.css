@@ -7,6 +7,13 @@
   width: 350px;
   border-radius: 6%;
   box-shadow: -10px 10px 10px 5px rgba(0, 0, 0, 0.25);
+  transform: scale3d(0);
+  transition: all 0.25s ease-out;
+}
+
+.card:hover {
+  box-shadow: -25px 25px 20px 5px rgba(0, 0, 0, 0.25);
+  transform: scale3d(105%, 105%, 105%);
 }
 
 .card .vectorImage {
@@ -85,6 +92,6 @@
 }
 
 .card .download .icon {
-  fill: #2d63a5;
+  fill: #3780da;
   cursor: pointer;
 }

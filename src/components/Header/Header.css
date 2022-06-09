@@ -162,6 +162,12 @@
   font-size: 2.5rem;
 }
 
+@media (max-width: 696px) {
+  .header .bottom .title {
+    font-size: 2rem;
+  }
+}
+
 .header .bottom .description {
   opacity: 0.6;
   margin-bottom: 1.5rem;
