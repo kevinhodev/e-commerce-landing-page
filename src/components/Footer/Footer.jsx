@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="discover">
-        <a href="#" className="link">
+        <a href="/discover" className="link">
           Discover All Colections
         </a>
         <div className="collections">

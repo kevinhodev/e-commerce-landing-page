@@ -16,11 +16,18 @@
 .header .top {
   display: flex;
   justify-content: space-between;
+  gap: 1.5rem;
 }
 
 .header .top .left,
 .header .top .right {
   display: flex;
+}
+
+.header .top .right {
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .header .top .left .logo {
@@ -40,45 +47,50 @@
   font-weight: bold;
 }
 
-.header .top .left .navigation {
+.header .top .right .menu {
   display: flex;
-  align-items: center;
-  margin-left: 1.5rem;
+  justify-content: space-between;
+  width: 100%;
 }
 
 @media (max-width: 696px) {
-  .header .top .left .navigation {
+  .header .top .right .menu {
     display: none;
   }
 }
 
-.header .top .left .navigation .menu {
+.header .top .right .menu .navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header .top .right .menu .navigation ul {
   display: flex;
   gap: 1rem;
 }
 
 @media (max-width: 1024px) {
-  .header .top .left .navigation .menu {
-    gap: 0.2rem;
+  .header .top .right .menu .navigation ul {
+    gap: 0.4rem;
   }
 }
 
-.header .top .left .navigation .menu li {
+.header .top .right .menu .navigation ul li {
   cursor: pointer;
   padding: 0.5rem 0.75rem;
 }
 
-.header .top .left .navigation .menu li:hover {
+.header .top .right .menu .navigation ul li:hover {
   background-color: #3f3a3a;
 }
 
-.header .top .left .navigation .menu li a {
+.header .top .right .menu .navigation ul li a {
   color: #fff;
   font-size: 0.85rem;
   font-weight: bold;
 }
 
-.header .top .left .navigation .menu li:last-child a::after {
+.header .top .right .menu .navigation ul li:last-child a::after {
   display: inline-block;
   content: "";
   width: 0;
@@ -89,11 +101,12 @@
   border-top: 5px solid #fff;
 }
 
-.header .top .right {
+.header .top .right .menu .buttons {
+  display: flex;
   align-items: center;
 }
 
-.header .top .right button {
+.header .top .right .menu .buttons button {
   font-family: inherit;
   font-weight: bold;
   font-size: 0.9rem;
@@ -108,16 +121,16 @@
 }
 
 @media (max-width: 1024px) {
-  .header .top .right button {
+  .header .top .right .menu .buttons button {
     font-size: 0.8rem;
   }
 }
 
-.header .top .right button:hover {
+.header .top .right .menu .buttons button:hover {
   background-color: #ffffff2c;
 }
 
-.header .top .right .icon {
+.header .top .right .menu .buttons .icon {
   cursor: pointer;
   border-radius: 50%;
   height: 40px;
@@ -128,17 +141,17 @@
 }
 
 @media (max-width: 1024px) {
-  .header .top .right .icon {
+  .header .top .right .menu .buttons .icon {
     height: 35px;
     width: 35px;
   }
 }
 
-.header .top .right .icon:hover {
+.header .top .right .menu .buttons .icon:hover {
   background-color: transparent;
 }
 
-.header .top .right .icon.facebook {
+.header .top .right .menu .buttons .icon.facebook {
   padding: 0.1rem;
   color: #3481f0;
 }
@@ -186,7 +199,7 @@
 
 @media (max-width: 696px) {
   .header .bottom .searchBar {
-    width: 325px;
+    width: 75%;
   }
 }
 

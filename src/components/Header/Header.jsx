@@ -1,9 +1,24 @@
 import { ReactComponent as GmailIcon } from "../../assets/icons/gmail.svg";
 import { ReactComponent as FacebookIcon } from "../../assets/icons/facebook.svg";
 import { ReactComponent as SearchIcon } from "../../assets/icons/search.svg";
+import MobileMenu from "../MobileMenu/MobileMenu";
+import { useState, useEffect } from "react";
 import "./Header.css";
 
 const Header = () => {
+  const [isMobile, setIsMobile] = useState(
+    window.matchMedia("(max-width: 696px)").matches
+  );
+
+  const checkIsMobile = () => {
+    setIsMobile(window.matchMedia("(max-width: 696px)").matches);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", checkIsMobile);
+    return () => window.removeEventListener("resize", checkIsMobile);
+  });
+
   return (
     <div className="header">
       <div className="top">
@@ -11,30 +26,38 @@ const Header = () => {
           <div className="logo">
             <span>KR</span>
           </div>
-          <nav className="navigation">
-            <ul className="menu">
-              <li>
-                <a href="#">Vectors</a>
-              </li>
-              <li>
-                <a href="#">Photos</a>
-              </li>
-              <li>
-                <a href="#">PSD</a>
-              </li>
-              <li>
-                <a href="#">Video</a>
-              </li>
-              <li>
-                <a href="#">More</a>
-              </li>
-            </ul>
-          </nav>
         </div>
         <div className="right">
-          <button>+ Submit</button>
-          <GmailIcon className="icon gmail" />
-          <FacebookIcon className="icon facebook" />
+          {!isMobile ? (
+            <div className="menu">
+              <nav className="navigation">
+                <ul>
+                  <li>
+                    <a href="/vectors">Vectors</a>
+                  </li>
+                  <li>
+                    <a href="/photos">Photos</a>
+                  </li>
+                  <li>
+                    <a href="/psd">PSD</a>
+                  </li>
+                  <li>
+                    <a href="/video">Video</a>
+                  </li>
+                  <li>
+                    <a href="/more">More</a>
+                  </li>
+                </ul>
+              </nav>
+              <div className="buttons">
+                <button>+ Submit</button>
+                <GmailIcon className="icon gmail" />
+                <FacebookIcon className="icon facebook" />
+              </div>
+            </div>
+          ) : (
+            <MobileMenu />
+          )}
         </div>
       </div>
       <div className="bottom">

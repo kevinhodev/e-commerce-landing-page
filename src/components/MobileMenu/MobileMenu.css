@@ -1,0 +1,121 @@
+.menuContainer .toggle {
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.menuContainer .toggle .menuIcon {
+  height: 30px;
+  width: 30px;
+}
+
+.menuContainer .mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #161819;
+  transition: transform 0.5s ease-in;
+}
+
+.menuContainer .mobileMenu.open {
+  transform: translateY(0);
+  transition-timing-function: ease-out;
+}
+
+.menuContainer .mobileMenu.closed {
+  transform: translateY(-100%);
+}
+
+.menuContainer .mobileMenu .navigation {
+  margin-top: 5rem;
+}
+
+.menuContainer .mobileMenu .navigation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.menuContainer .mobileMenu .navigation ul li {
+  cursor: pointer;
+  width: 100vw;
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.menuContainer .mobileMenu .navigation ul li:hover {
+  background-color: #3f3a3a;
+}
+
+.menuContainer .mobileMenu .navigation ul li a {
+  color: #fff;
+}
+
+.menuContainer .mobileMenu .navigation ul li:last-child a::after {
+  display: inline-block;
+  content: "";
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #fff;
+}
+
+.menuContainer .mobileMenu .buttons {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menuContainer .mobileMenu .buttons button {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1.25rem;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+  border: 1px solid #ffffff2c;
+  border-radius: 8px;
+  padding: 0.75rem 1.1rem;
+  cursor: pointer;
+  width: 75vw;
+}
+
+.menuContainer .mobileMenu .buttons button:hover {
+  background-color: #ffffff2c;
+}
+
+.menuContainer .mobileMenu .buttons .icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.menuContainer .mobileMenu .buttons .icons .icon {
+  cursor: pointer;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  background-color: #323435;
+}
+
+.menuContainer .mobileMenu .buttons .icons .icon:hover {
+  background-color: transparent;
+}
+
+.menuContainer .mobileMenu .buttons .icons .icon.facebook {
+  padding: 0.1rem;
+  color: #3481f0;
+}
