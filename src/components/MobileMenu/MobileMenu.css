@@ -1,6 +1,8 @@
 .menuContainer .toggle {
   color: #fff;
-  position: relative;
+  position: fixed;
+  right: 1.5rem;
+  top: 2rem;
   z-index: 2;
   cursor: pointer;
 }
@@ -19,6 +21,7 @@
   align-items: center;
   background-color: #161819;
   transition: transform 0.5s ease-in;
+  backdrop-filter: blur(16px);
 }
 
 .menuContainer .mobileMenu.open {
@@ -31,7 +34,7 @@
 }
 
 .menuContainer .mobileMenu .navigation {
-  margin-top: 3.5rem;
+  margin-top: 4.5rem;
 }
 
 .menuContainer .mobileMenu .navigation ul {
@@ -83,9 +86,9 @@
   outline: none;
   border: 1px solid #ffffff2c;
   border-radius: 8px;
-  padding: 0.5rem 1rem;
+  padding: 1rem 0.5rem;
   cursor: pointer;
-  width: 75vw;
+  width: 70vw;
 }
 
 .menuContainer .mobileMenu .buttons button:hover {
