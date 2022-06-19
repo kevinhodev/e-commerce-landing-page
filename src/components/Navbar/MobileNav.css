@@ -9,6 +9,16 @@
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(16px);
+  transition: transform 0.5s ease-out;
+}
+
+.mobile-nav.closed {
+  transition-timing-function: ease-in;
+  transform: translate3d(0, -100vh, 0);
+}
+
+.mobile-nav.open {
+  transform: none;
 }
 
 .mobile-nav__list {
@@ -73,4 +83,18 @@
 .mobile-nav__buttons .icon.facebook {
   padding: 0.1rem;
   color: #3481f0;
+}
+
+.toggle {
+  position: fixed;
+  top: 2rem;
+  right: 1.25rem;
+  z-index: 150;
+}
+
+.toggle__icon {
+  height: 30px;
+  width: 30px;
+  color: #fff;
+  cursor: pointer;
 }
