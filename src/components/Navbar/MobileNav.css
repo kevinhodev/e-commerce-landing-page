@@ -1,0 +1,76 @@
+.mobile-nav {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background-color: #161819;
+  opacity: 0.9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(16px);
+}
+
+.mobile-nav__list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+  margin-top: -2rem;
+}
+
+.mobile-nav__list .nav-link {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  padding: 1.5rem 2rem;
+}
+
+.mobile-nav__list .nav-link:hover {
+  background-color: #3f3a3a;
+}
+
+.mobile-nav__buttons {
+  position: absolute;
+  bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.mobile-nav__buttons .btn {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 0.9rem;
+  background-color: transparent;
+  color: #fff;
+  outline: none;
+  border: 1px solid #ffffff2c;
+  border-radius: 8px;
+  padding: 0.75rem 1.1rem;
+  width: 150px;
+  cursor: pointer;
+}
+
+.mobile-nav__buttons .btn:hover {
+  background-color: #ffffff2c;
+}
+
+.mobile-nav__buttons .icon {
+  cursor: pointer;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  padding: 0.5rem;
+  background-color: #323435;
+}
+
+.mobile-nav__buttons .icon:hover {
+  background-color: transparent;
+}
+
+.mobile-nav__buttons .icon.facebook {
+  padding: 0.1rem;
+  color: #3481f0;
+}

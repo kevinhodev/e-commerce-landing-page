@@ -1,5 +1,5 @@
 import Container from "./components/Container/Container";
-import Header from "./components/Header/Header";
+import Navbar from "./components/Navbar/Navbar";
 import OptionsBar from "./components/OptionsBar/OptionsBar";
 import List from "./components/List/List";
 import Card from "./components/Card/Card";
@@ -9,7 +9,7 @@ const App = () => {
   return (
     <>
       <Container>
-        <Header />
+        <Navbar />
         <OptionsBar />
         <List>
           <Card />
