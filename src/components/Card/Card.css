@@ -8,7 +8,20 @@
   border-radius: 6%;
   box-shadow: -10px 10px 10px 5px rgba(0, 0, 0, 0.25);
   transform: scale3d(0);
-  transition: all 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+}
+
+@media (max-width: 696px) {
+  .card {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .card {
+    width: 90%;
+  }
 }
 
 .card:hover {
