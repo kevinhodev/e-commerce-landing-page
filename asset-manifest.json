@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d4445d88.chunk.css",
+    "main.js": "/static/js/main.adf3253f.chunk.js",
+    "main.js.map": "/static/js/main.adf3253f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.454c9f76.js",
+    "runtime-main.js.map": "/static/js/runtime-main.454c9f76.js.map",
+    "static/js/2.40f290ca.chunk.js": "/static/js/2.40f290ca.chunk.js",
+    "static/js/2.40f290ca.chunk.js.map": "/static/js/2.40f290ca.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.d4445d88.chunk.css.map": "/static/css/main.d4445d88.chunk.css.map",
+    "static/js/2.40f290ca.chunk.js.LICENSE.txt": "/static/js/2.40f290ca.chunk.js.LICENSE.txt",
+    "static/media/arrow-left-s.27e63cb8.svg": "/static/media/arrow-left-s.27e63cb8.svg",
+    "static/media/arrow-right-s.5e3e4e57.svg": "/static/media/arrow-right-s.5e3e4e57.svg",
+    "static/media/arrow-right.d3a5a1cc.svg": "/static/media/arrow-right.d3a5a1cc.svg",
+    "static/media/astronaut.da34ecc3.png": "/static/media/astronaut.da34ecc3.png",
+    "static/media/basketball.fc1ea623.png": "/static/media/basketball.fc1ea623.png",
+    "static/media/bookmark.df31a531.svg": "/static/media/bookmark.df31a531.svg",
+    "static/media/close.764e89c0.svg": "/static/media/close.764e89c0.svg",
+    "static/media/dog.8f8ce3bb.png": "/static/media/dog.8f8ce3bb.png",
+    "static/media/download.0a60a445.svg": "/static/media/download.0a60a445.svg",
+    "static/media/facebook.b09d5bf7.svg": "/static/media/facebook.b09d5bf7.svg",
+    "static/media/gmail.e1bc2ceb.svg": "/static/media/gmail.e1bc2ceb.svg",
+    "static/media/lock.1ec3f975.svg": "/static/media/lock.1ec3f975.svg",
+    "static/media/menu.64033a44.svg": "/static/media/menu.64033a44.svg",
+    "static/media/motocycle.3165f663.png": "/static/media/motocycle.3165f663.png",
+    "static/media/nature.a033d202.png": "/static/media/nature.a033d202.png",
+    "static/media/options.42cf1609.svg": "/static/media/options.42cf1609.svg",
+    "static/media/person.91478911.png": "/static/media/person.91478911.png",
+    "static/media/rockstar.ee769bd5.png": "/static/media/rockstar.ee769bd5.png",
+    "static/media/search.e32d0cc8.svg": "/static/media/search.e32d0cc8.svg",
+    "static/media/tools.ac1daaf8.png": "/static/media/tools.ac1daaf8.png",
+    "static/media/unlock.3db87e1f.svg": "/static/media/unlock.3db87e1f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.454c9f76.js",
+    "static/js/2.40f290ca.chunk.js",
+    "static/css/main.d4445d88.chunk.css",
+    "static/js/main.adf3253f.chunk.js"
+  ]
+}
