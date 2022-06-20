@@ -26,3 +26,22 @@ ul {
 a {
   text-decoration: none;
 }
+
+.header,
+.main {
+  padding: 0 1rem;
+}
+
+.header {
+  margin-top: 7.5rem;
+}
+
+@media (max-width: 696px) {
+  .header {
+    margin-top: 6rem;
+  }
+}
+
+.main {
+  margin-top: 2rem;
+}
