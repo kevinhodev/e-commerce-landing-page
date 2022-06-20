@@ -2,12 +2,19 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 3.5rem;
+}
+
+@media (max-width: 696px) {
+  .optionsBar {
+    padding: 0;
+  }
 }
 
 .optionsBar .filterOptions {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.75rem;
 }
 
 @media (max-width: 696px) {
@@ -37,6 +44,13 @@
   }
 }
 
+@media (max-width: 360px) {
+  .optionsBar .filterOptions .latest,
+  .optionsBar .filterOptions .popular {
+    font-size: 0.8rem;
+  }
+}
+
 .optionsBar .filterOptions .latest::before {
   content: "";
   position: absolute;
@@ -54,10 +68,17 @@
 
 .optionsBar .filterOptions .premium,
 .optionsBar .filterOptions .free {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 696px) {
+  .optionsBar .filterOptions .premium,
+  .optionsBar .filterOptions .free {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 360px) {
   .optionsBar .filterOptions .premium,
   .optionsBar .filterOptions .free {
     font-size: 0.75rem;
@@ -74,7 +95,13 @@
 
 .optionsBar .settings {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
+}
+
+@media (max-width: 696px) {
+  .optionsBar .settings {
+    gap: 1rem;
+  }
 }
 
 .optionsBar .settings svg {

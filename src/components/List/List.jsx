@@ -1,11 +1,7 @@
 import "./List.css";
 
-const List = ({ direction, children }) => {
-  return (
-    <div className="list" style={{ flexDirection: `${direction}` }}>
-      {children}
-    </div>
-  );
+const List = ({ children }) => {
+  return <div className="list">{children}</div>;
 };
 
 export default List;
